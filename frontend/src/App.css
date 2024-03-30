@@ -1,0 +1,33 @@
+/* Variables de color si el tema es nulo o light */
+html {
+  --primary-color: #282c34;
+  --secondary-color: #fff;
+}
+
+/* Variables de color si el tema es dark */
+html[data-theme="dark"] {
+  --primary-color: #fff;
+  --secondary-color: #282c34;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: var(--secondary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--primary-color);
+}
+
+/* Estilos para el contenedor del interruptor de tema */
+.theme-switch-container {
+  position: fixed; /* Se fija en la ventana */
+  top: 20px; /* Distancia desde la parte superior */
+  right: 20px; /* Distancia desde la derecha */
+}
